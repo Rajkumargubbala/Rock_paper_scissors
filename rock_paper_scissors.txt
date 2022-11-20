@@ -1,25 +1,12 @@
-person1=input("enter the person1")
-person2=input('enter the person2')
-if person1=="rock":
-    if person2=="rock":
-        print("match is tie")
-    elif person2=="paper":
-        print("person2 wins")
-    elif person2=="scissor":
-        print("person1 wins")
-elif person1=="paper":
-    if person2=="paper":
-        print("match is tie")
-    elif person2=="scissor":
-        print("person2 wins")
-    elif person2=="rock":
-        print("person1 wins")
-elif person1=="scissor":
-    if person2=="scissor":
-        print("match is tie")
-    elif person2=="rock":
-        print("person2 wins")
-    elif person2=="paper":
-        print("person1 wins")
+player1=input("player1")
+player2=input("player2")
+if player1=="paper" and player2=="rock":
+    print("player1 wines")
+elif player1=="rock" and player2=="scissors":  
+    print("player1 wines")
+elif player1=="paper" and player2=="scissors":
+    print("player1 wines")
+elif player1==player2:
+    print("its a tie")
 else:
-    print('Invalid input')
+    print("player2 wines")

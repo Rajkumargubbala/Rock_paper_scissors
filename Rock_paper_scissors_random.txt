@@ -1,21 +1,21 @@
-user_action = input("Enter a choice (rock, paper, scissors): ")
-possible_actions = ["rock", "paper", "scissors"]
-computer_action = random.choice(possible_actions)
-print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
-if user_action == computer_action:
-    print(f"Both players selected {user_action}. It's a tie!")
-elif user_action == "rock":
-    if computer_action == "scissors":
+person1 = input("Enter a choice (rock, paper, scissors): ")
+options = ["rock", "paper", "scissors"]
+person2 = random.choice(options)
+print(f"\nYou chose {person1}, computer chose {person2}.\n")
+if person1 == person2:
+    print(f"Both players selected {person1}. It's a tie!")
+elif person1 == "rock":
+    if person2 == "scissors":
         print("Rock smashes scissors! You win!")
     else:
         print("Paper covers rock! You lose.")
-elif user_action == "paper":
-    if computer_action == "rock":
+elif person1 == "paper":
+    if person2 == "rock":
         print("Paper covers rock! You win!")
     else:
         print("Scissors cuts paper! You lose.")
-elif user_action == "scissors":
-    if computer_action == "paper":
+elif person1 == "scissors":
+    if person2 == "paper":
         print("Scissors cuts paper! You win!")
     else:
         print("Rock smashes scissors! You lose.")
